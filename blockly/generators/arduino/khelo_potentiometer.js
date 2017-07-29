@@ -9,7 +9,6 @@ Blockly.Arduino['khelo_potentiometer'] = function(block) {
   var code = 'void setup() {  
 pinMode (dropdown_pin_options,INPUT);
 }
-
 void loop() {
 analogRead(dropdown_pin_options);
 }';
