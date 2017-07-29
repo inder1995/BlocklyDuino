@@ -1,17 +1,14 @@
-goog.provide('Blockly.Blocks.custom');
+goog.provide('Blockly.Blocks.khelo_potentiometer');
 
 goog.require('Blockly.Blocks');
-
-Blockly.Blocks['base_delay_example'] = {
-  helpUrl: 'http://arduino.cc/en/Reference/delay',
+Blockly.Blocks['khelo_potentiometer'] = {
   init: function() {
-    this.setColour(120);
-    this.appendValueInput("DELAY_TIME", 'Number')
-        .appendField("Delay whee")
-        .setCheck('Number');
-    this.setInputsInline(true);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setTooltip('Delay specific time');
+    this.appendDummyInput()
+        .appendField("Read dimmer at pin")
+        .appendField(new Blockly.FieldDropdown([["A0", "analog_pin_0"], ["A1", "analog_pin_1"]]), "pin_options");
+    this.setOutput(true, "Number");
+    this.setColour(290);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
   }
 };
