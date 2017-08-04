@@ -10,8 +10,7 @@ Blockly.Arduino['potentiometer'] = function(block) {
 pinMode (dropdown_pin_options,INPUT);
 }
 void loop() {
-analogRead(dropdown_pin_options);
-}";
+analogRead(dropdown_pin_options);}";
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.Arduino.khelo];
 };
