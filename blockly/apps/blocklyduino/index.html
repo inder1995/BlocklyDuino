@@ -322,28 +322,8 @@ function init() {
   <xml id="toolbox" style="display: none">
 <category name="khelo">
 <block type="khelo_potentiometer" id="68" deletable="false" movable="false" x="0" y="0">
-<mutation connections="LEFT"></mutation>
-<field name="NAME">khelo_potentiometer</field>
-<field name="INLINE">AUTO</field>
-<field name="CONNECTIONS">LEFT</field>
-<statement name="INPUTS">
-<block type="input_dummy" id="69">
-<field name="ALIGN">LEFT</field>
-<statement name="FIELDS"><block type="field_static" id="70">
-<field name="TEXT">Read dimmer at pin</field>
-<next><block type="field_dropdown" id="71"><mutation options="2"></mutation>
-<field name="FIELDNAME">pin_options</field>
-<field name="USER0">A0</field>
-<field name="CPU0">analog_pin_0</field>
-<field name="USER1">A1</field>
-<field name="CPU1">analog_pin_1</field>
-</block></next></block></statement></block></statement>
-<value name="OUTPUTTYPE"><block type="type_number" id="72"></block></value>
-<value name="COLOUR"><block type="colour_hue" id="73"><mutation colour="290"></mutation><field name="HUE">290</field>
   </block>
-  </value>
-    </block>
-    </category>
+  </category>
     
     <category name="Logic">
       <block type="controls_if"></block>
