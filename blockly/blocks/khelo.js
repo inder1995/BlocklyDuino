@@ -1,7 +1,7 @@
 goog.provide('Blockly.Blocks.khelo');
 
 goog.require('Blockly.Blocks');
-Blockly.Blocks['potentiometer'] = {
+Blockly.Blocks['khelo_potentiometer'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Read dimmer at pin")
