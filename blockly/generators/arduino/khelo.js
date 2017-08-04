@@ -3,7 +3,7 @@ goog.provide('Blockly.Arduino.khelo');
 goog.require('Blockly.Arduino');
 
 
-Blockly.Arduino['potentiometer'] = function(block) {
+Blockly.Arduino['khelo_potentiometer'] = function(block) {
   var dropdown_pin_options = block.getFieldValue('pin_options');
   // TODO: Assemble Arduino into code variable.
   var code = "void setup() {  
