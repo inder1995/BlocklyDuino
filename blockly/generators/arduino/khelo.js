@@ -50,3 +50,11 @@ void loop() { \n
   return [code];
 };
 
+  Blockly.Arduino['khelo_led'] = function(block) {
+  var dropdown_led_options = block.getFieldValue('LED_options');
+  var dropdown_pin_options = block.getFieldValue('pin_options');
+  // TODO: Assemble Arduino into code variable.
+  var code = '# define led_pin '+dropdown_led_options+'\n void setup{ \n pinMode('+dropdown_pin_options+',OUTPUT); \n } \n void loop{ \n
+  if ('+dropdown_led_options+'== 'on') \n digitalWrite('+dropdown_pin_options+',HIGH); \n if ('+dropdown_led_options+'== 'off') \n digitalWrite('+dropdown_pin_options+',LOW);\n if ('+dropdown_led_options+'== 'blink'){ \n for(int i=0; i<10;i++){\n digitalWrite('+dropdown_pin_options+',HIGH);\n delay(200); \n digitalWrite('+dropdown_pin_options+',LOW);\n delay(100);\n}}}';
+  return code;
+};
