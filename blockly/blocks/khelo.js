@@ -16,3 +16,15 @@ Blockly.Blocks["khelo_potentiometer"] = {
     this.setOutput(true, "Number");
       }
 };
+
+Blockly.Blocks['khelo_proximity'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Read proximity on pin")
+        .appendField(new Blockly.FieldDropdown([["A0", "analog_pin_0"], ["A1", "analog_pin_1"]]), "pin_options");
+    this.setOutput(true, "Number");
+    this.setColour(210);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
