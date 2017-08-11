@@ -53,3 +53,19 @@ Blockly.Blocks['khelo_distance'] = {
     this.setHelpUrl('http://www.example.com/');
   }
 };
+
+Blockly.Blocks['khelo_led'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("LED")
+        .appendField(new Blockly.FieldDropdown([["ON", "on"], ["OFF", "off"], ["BLINK", "blink"]]), "LED_options")
+        .appendField("at pin")
+        .appendField(new Blockly.FieldDropdown([["3", "pin_3"], ["5", "pin_5"], ["6", "pin_6"], ["9", "pin_9"], ["10", "pin_10"]]), "pin_options");
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(210);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
