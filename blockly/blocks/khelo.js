@@ -28,3 +28,16 @@ Blockly.Blocks['khelo_proximity'] = {
     this.setHelpUrl('http://www.example.com/');
   }
 };
+
+Blockly.Blocks['khelo_water_detector'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Wet or not on pin")
+        .appendField(new Blockly.FieldDropdown([["A0", "analog_pin_0"], ["A1", "analog_pin_1"]]), "pin_options");
+    this.setInputsInline(true);
+    this.setOutput(true, "String");
+    this.setColour(210);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
