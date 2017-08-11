@@ -69,3 +69,20 @@ Blockly.Blocks['khelo_led'] = {
     this.setHelpUrl('http://www.example.com/');
   }
 };
+
+Blockly.Blocks['khelo_button'] = {
+  init: function() {
+    this.appendStatementInput("button")
+        .setCheck(null)
+        .appendField("If button at pin ")
+        .appendField(new Blockly.FieldDropdown([["2", "pin_2"], ["4", "pin_4"], ["7", "pin_7"]]), "pin_options")
+        .appendField("is ")
+        .appendField(new Blockly.FieldDropdown([["Pressed", "HIGH"], ["Not pressed", "lowLOW"]]), "button_state");
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(210);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
