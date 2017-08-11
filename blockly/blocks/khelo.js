@@ -41,3 +41,15 @@ Blockly.Blocks['khelo_water_detector'] = {
     this.setHelpUrl('http://www.example.com/');
   }
 };
+
+Blockly.Blocks['khelo_distance'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("The distance in centimeters is");
+    this.setInputsInline(true);
+    this.setOutput(true, "String");
+    this.setColour(315);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
